@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Player"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/gambarplay"
+        android:layout_width="175dp"
+        android:src="@drawable/gambarmenu"
+        android:layout_height="175dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambarplay"
+        android:text="Username "
+        android:gravity="left"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginBottom="10dp"
+        android:hint="Username"
+        android:textColor="@color/black"/>/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inuser"
+        android:text="Password "
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/inpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_marginBottom="20px"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"/>/>
+
+    <Button
+        android:id="@+id/btnlgn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFF"
+        android:hint="LOGIN"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
